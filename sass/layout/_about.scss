@@ -1,11 +1,22 @@
 .about {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  //padding-top: 94px;
+  //padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .about-block {
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  display: block;
+
+  //@media screen and (min-width: 768px) {
+  //display: flex;
+  //justify-content: space-between;
+  //}
+  //@media screen and (min-width: 1200px) {
+  //display: flex;
+  //justify-content: space-between;
+  //}
 }
 
 .about-block__list {
@@ -13,7 +24,7 @@
 }
 
 .about-block__subtitle {
-  @include fonts (700, 14px, 1.14, null);
+  @include fonts(700, 14px, 1.14, null);
   margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--primary-text-color);
