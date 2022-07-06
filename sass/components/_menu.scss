@@ -1,8 +1,6 @@
 .site-nav-list {
+  @include fonts(null, 14px, 1.14, 0.02em);
   display: flex;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   .list:hover,
   .list:focus {
     color: var(--accent-color);

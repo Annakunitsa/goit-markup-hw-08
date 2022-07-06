@@ -13,18 +13,14 @@
 }
 
 .about-block__subtitle {
+  @include fonts (700, 14px, 1.14, null);
   margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
 
 .about-block__text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  @include fonts(400, 14px, 1.71, null);
   color: var(--secondary-text-color);
 }
 

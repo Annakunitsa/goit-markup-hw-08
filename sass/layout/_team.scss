@@ -26,17 +26,13 @@
 }
 
 .team-name {
+  @include fonts(500, 16px, 1.19, null);
   margin-bottom: 10px;
-  font-size: 16px;
-  line-height: 1.19;
-  font-weight: 500;
 }
 
 .team-description {
+  @include fonts(400, 16px, 1.19, null);
   margin-bottom: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
   color: var(--secondary-text-color);
 }
 

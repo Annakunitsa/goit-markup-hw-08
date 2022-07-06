@@ -14,10 +14,8 @@
 }
 
 .footer-address {
+  @include fonts(400, 14px, 1.7, null);
   color: var(--main-white-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -26,9 +24,7 @@
 
 .footer-email,
 .footer-phone {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  @include fonts(400, 14px, 1.7, null);
   color: rgba(255, 255, 255, 0.6);
   &:hover,
   &:focus {
@@ -46,12 +42,10 @@
 }
 
 .social-footer-title {
+  @include fonts(700, 14px, 1.14, null);
   padding-top: 12px;
   color: var(--main-white-color);
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -91,14 +85,13 @@
 }
 
 .subscribe-input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: cal(20/16);
+  @include fonts(400, 16px, 1.25, null);
   display: block;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .subs-btn {
+  @include fonts(700, 16px, 1.88, 0.06em);
   display: flex;
   width: 200px;
   height: 50px;
@@ -110,11 +103,7 @@
   border: none;
   position: relative;
   align-items: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
   text-align: center;
-  letter-spacing: 0.06em;
 }
 
 .subscribe-icon {
