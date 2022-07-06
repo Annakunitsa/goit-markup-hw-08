@@ -1,0 +1,38 @@
+.site-nav-list {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  .list:hover,
+  .list:focus {
+    color: var(--accent-color);
+  }
+}
+
+.link-list:not(:last-child) {
+  margin-right: 50px;
+}
+
+.list {
+  color: var(--primary-text-color);
+}
+
+.link-current {
+  position: relative;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  .site-nav-list & {
+    color: var(--accent-color);
+  }
+}
+
+.link-current::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
