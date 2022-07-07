@@ -530,15 +530,16 @@ body {
 .about {
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 100%;
 }
 
 .about-block {
   width: 100%;
-  display: block;
-}
-
-.about-block__list {
-  width: 270px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 .about-block__subtitle {
@@ -547,6 +548,7 @@ body {
   line-height: 1.14;
   margin-bottom: 10px;
   text-transform: uppercase;
+  text-align: center;
   color: var(--primary-text-color);
 }
 
@@ -559,6 +561,7 @@ body {
 
 .about-block__icon {
   margin-bottom: 30px;
+  max-width: 100%;
 }
 
 .work__title,

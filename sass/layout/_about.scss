@@ -3,11 +3,16 @@
   //padding-bottom: 94px;
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 100%;
 }
 
 .about-block {
   width: 100%;
-  display: block;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 
   //@media screen and (min-width: 768px) {
   //display: flex;
@@ -20,13 +25,14 @@
 }
 
 .about-block__list {
-  width: 270px;
+  //width: 270px;
 }
 
 .about-block__subtitle {
   @include fonts(700, 14px, 1.14, null);
   margin-bottom: 10px;
   text-transform: uppercase;
+  text-align: center;
   color: var(--primary-text-color);
 }
 
@@ -37,4 +43,5 @@
 
 .about-block__icon {
   margin-bottom: 30px;
+  max-width: 100%;
 }
