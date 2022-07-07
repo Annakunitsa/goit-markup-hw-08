@@ -478,7 +478,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    min-width: 1600px;
+    min-width: 1200px;
     padding: 200px 0px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   }
@@ -528,12 +528,23 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .about-block {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  width: 480px;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .about-block {
+    width: 1200px;
+  }
 }
 
 .about-block__list {
@@ -542,6 +553,11 @@ body {
 @media screen and (min-width: 768px) {
   .about-block__list {
     width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-block__list {
+    width: 270px;
   }
 }
 
@@ -580,7 +596,14 @@ body {
   font-size: 36px;
   line-height: 1.14;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .work__title,
+.team__title,
+.clients__title {
+    margin-bottom: 50px;
+  }
 }
 
 .clients__title {
@@ -597,6 +620,16 @@ body {
 
 .work {
   padding-bottom: 94px;
+}
+@media screen and (max-width: 480px) {
+  .work {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .work {
+    display: none;
+  }
 }
 
 .work__block {
@@ -629,23 +662,47 @@ body {
 
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+  width: 100%;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    width: 1200px;
+  }
 }
 
 .team-card {
-  width: 270px;
+  width: 100%;
   height: 428px;
   padding-bottom: 30px;
   text-align: center;
   background-color: var(--main-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 1200px) {
+  .team-card {
+    max-width: 270px;
+  }
 }
 
 .team-title {
