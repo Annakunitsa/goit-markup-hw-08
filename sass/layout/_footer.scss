@@ -11,7 +11,7 @@
 .subscribe-form,
 .social-footer {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -21,6 +21,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @include tablet {
+    width: 50%;
+  }
 
   //comp
   //display: block;
@@ -85,6 +88,11 @@
 }
 
 //social-footer----------------------------------
+.social-footer {
+  @include tablet {
+    width: 50%;
+  }
+}
 
 .social-footer-title {
   @include fonts(700, 14px, 1.14, null);
@@ -104,6 +112,9 @@
   width: 450px;
   //mob
   margin-bottom: 60px;
+  @include tablet {
+    margin-bottom: 102px;
+  }
 }
 
 .social-footer-list {
@@ -138,7 +149,7 @@
 .subscribe-block {
   display: flex;
   justify-content: center;
-
+  flex-direction: column;
   //desk
   //align-items: flex-start;
 }
@@ -147,6 +158,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
 }
 
 .subscribe-input {
@@ -174,6 +186,9 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
+  }
+  @include tablet {
+    width: 450px;
   }
 }
 

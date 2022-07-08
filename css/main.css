@@ -989,7 +989,7 @@ body {
 .subscribe-form,
 .social-footer {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -998,6 +998,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .contact-footer {
+    width: 50%;
+  }
 }
 
 .footer-logo {
@@ -1045,6 +1050,12 @@ body {
   margin-bottom: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .social-footer {
+    width: 50%;
+  }
+}
+
 .social-footer-title {
   font-weight: 700;
   font-size: 14px;
@@ -1063,6 +1074,11 @@ body {
   gap: 10px;
   width: 450px;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .social-footer-block {
+    margin-bottom: 102px;
+  }
 }
 
 .social-footer-list {
@@ -1094,12 +1110,14 @@ body {
 .subscribe-block {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .subscribe-form {
   display: flex;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
 }
 
 .subscribe-input {
@@ -1124,6 +1142,11 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .subscribe-input {
+    width: 450px;
+  }
 }
 
 .subscribe-input::placeholder {
