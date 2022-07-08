@@ -1006,7 +1006,7 @@ body {
 
 .address {
   margin-top: 20px;
-  margin-bottom: 9px;
+  margin-bottom: 60px;
 }
 
 .logo-white {
@@ -1041,8 +1041,8 @@ body {
 }
 
 .footer-email-list {
-  margin-top: 9px;
-  margin-bottom: 9px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .social-footer-title {
@@ -1057,19 +1057,55 @@ body {
   text-align: center;
 }
 
+.social-footer-block {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 450px;
+  margin-bottom: 60px;
+}
+
+.social-footer-list {
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-footer-links {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  fill: var(--main-white-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-footer-links:hover, .social-footer-links:focus {
+  background-color: var(--accent-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
 .subscribe-block {
-  display: block;
-  align-items: flex-start;
+  display: flex;
+  justify-content: center;
 }
 
 .subscribe-form {
   display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .subscribe-input {
   width: 358px;
   height: 50px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   padding-top: 15px;
   padding-left: 16px;
   padding-bottom: 15px;
@@ -1095,6 +1131,7 @@ body {
   font-size: 16px;
   line-height: 1.25;
   display: block;
+  justify-content: center;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1115,43 +1152,14 @@ body {
   position: relative;
   align-items: center;
   text-align: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .subscribe-icon {
   fill: var(--main-white-color);
   display: flex;
   margin-left: 10px;
-}
-
-.social-footer-block {
-  display: flex;
-  justify-content: center;
-  width: 232px;
-}
-
-.social-footer-list {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.social-footer-links {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  fill: var(--main-white-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-footer-links:hover, .social-footer-links:focus {
-  background-color: var(--accent-color);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
 }
 
 .backdrop {
