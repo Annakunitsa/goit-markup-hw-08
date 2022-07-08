@@ -983,7 +983,6 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .footer-container,
 .subscribe-block,
 .subscribe-form,
@@ -998,6 +997,7 @@ body {
 .subscribe-form,
 .social-footer {
     flex-wrap: nowrap;
+    align-items: flex-start;
   }
 }
 
@@ -1019,12 +1019,24 @@ body {
 }
 
 .footer-logo {
+  display: flex;
   margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    margin: 0;
+  }
 }
 
 .address {
   margin-top: 20px;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-bottom: 9px;
+    text-align: left;
+  }
 }
 
 .logo-white {
@@ -1061,6 +1073,12 @@ body {
 .footer-email-list {
   margin-top: 8px;
   margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-email-list {
+    margin-top: 9px;
+    margin-bottom: 9px;
+  }
 }
 
 @media screen and (min-width: 768px) {

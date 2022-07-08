@@ -3,6 +3,8 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  @include desktop {
+  }
 }
 
 //моб
@@ -15,6 +17,7 @@
   justify-content: center;
   @include desktop {
     flex-wrap: nowrap;
+    align-items: flex-start;
   }
 }
 
@@ -30,32 +33,24 @@
   @include desktop {
     width: 316px;
   }
-
-  //comp
-  //display: block;
-  //width: 316px;
 }
 
 //mob
 .footer-logo {
+  display: flex;
   margin: 0 auto;
+  @include desktop {
+    margin: 0;
+  }
 }
-
-//desk
-//.social-footer {
-//display: block;
-//width: 206px;
-
-//desk
-//margin-right: 93px;
-//align-items: flex-start;
-//}
 
 .address {
   margin-top: 20px;
   margin-bottom: 60px;
-  //desk
-  //margin-bottom: 9px;
+  @include desktop {
+    margin-bottom: 9px;
+    text-align: left;
+  }
 }
 
 .logo-white {
@@ -88,9 +83,10 @@
 .footer-email-list {
   margin-top: 8px;
   margin-bottom: 8px;
-  //desk
-  //margin-top: 9px;
-  //margin-bottom: 9px;
+  @include desktop {
+    margin-top: 9px;
+    margin-bottom: 9px;
+  }
 }
 
 //social-footer----------------------------------
