@@ -338,6 +338,7 @@ body {
 }
 
 .container {
+  display: block;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -530,6 +531,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .about {
+    max-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -544,6 +546,7 @@ body {
 @media screen and (min-width: 1200px) {
   .about-block {
     width: 1200px;
+    justify-content: center;
   }
 }
 
@@ -631,10 +634,16 @@ body {
     display: none;
   }
 }
+@media screen and (max-width: 768px) and (min-width: 1200px) {
+  .work {
+    width: 1200px;
+  }
+}
 
 .work__block {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
 }
 
 .work__item {
@@ -792,7 +801,8 @@ body {
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
 }
 @media screen and (min-width: 1200px) {
   .clients__list {

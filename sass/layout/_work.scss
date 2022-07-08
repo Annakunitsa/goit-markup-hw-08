@@ -5,12 +5,16 @@
   }
   @media screen and (max-width: 768px) {
     display: none;
+    @include desktop {
+      width: 1200px;
+    }
   }
 }
 
 .work__block {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
 }
 
 .work__item {
