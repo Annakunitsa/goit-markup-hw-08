@@ -1,9 +1,22 @@
 .site-nav-list {
-  @include fonts(null, 14px, 1.14, 0.02em);
-  display: flex;
-  .list:hover,
-  .list:focus {
-    color: var(--accent-color);
+  display: none;
+  @include tablet {
+    display: flex;
+    @include fonts(null, 14px, 1.14, 0.02em);
+    display: flex;
+    .list:hover,
+    .list:focus {
+      color: var(--accent-color);
+    }
+  }
+  @include desktop {
+    display: flex;
+    @include fonts(null, 14px, 1.14, 0.02em);
+    display: flex;
+    .list:hover,
+    .list:focus {
+      color: var(--accent-color);
+    }
   }
 }
 

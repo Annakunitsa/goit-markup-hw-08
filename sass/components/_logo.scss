@@ -1,10 +1,13 @@
 .logo {
-  @include fonts(700, 26px, 1.2, null);
+  @include fonts(700, 24px, 1.16, null);
   margin-right: 93px;
   font-family: raleway;
   color: inherit;
   .accent {
     color: var(--accent-color);
     font-family: raleway;
+  }
+  @include desktop {
+    @include fonts(700, 26px, 1.2, null);
   }
 }

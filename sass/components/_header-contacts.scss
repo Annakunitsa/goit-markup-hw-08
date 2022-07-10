@@ -1,20 +1,42 @@
 .contact-list {
-  align-items: center;
-  display: flex;
-  margin-left: auto;
+  display: none;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: auto;
+  }
+  @include desktop {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    flex-direction: row;
+  }
 }
 
 .email-link,
 .phone-number-link {
-  @include fonts(null, 14px, 1.14, 0.02em);
   color: var(--secondary-text-color);
+  @include tablet {
+    @include fonts(500, 12px, 1.16, 0.02em);
+  }
+
+  @include desktop {
+    @include fonts(null, 14px, 1.14, 0.02em);
+  }
 }
 
 .email-link {
-  margin-right: 50px;
   display: flex;
   align-items: center;
   width: 100%;
+  @include tablet {
+    margin-bottom: 12px;
+  }
+  @include desktop {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
 }
 
 .email-icon,

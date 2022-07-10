@@ -3,6 +3,9 @@
   @media screen and (max-width: 480px) {
     display: none;
   }
+  @include tablet {
+    display: none;
+  }
   @media screen and (max-width: 768px) {
     display: none;
     @include desktop {
