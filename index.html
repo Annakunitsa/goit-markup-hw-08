@@ -22,19 +22,18 @@
     />
   -->
     <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
+   </head>
 
   <body>
     <!--Шапка-->
     <header class="header header-line">
       <div class="container">
         <div class="menu-mob">
-            <button type="button" class="menu-button is-open" aria-expanded="false">
+            <button type="button" class="menu-button menu-close-btn is-open" aria-expanded="false">
               <svg class="menu-icon" width="40" height="40" aria-label="переключатель мобильного меню">
-              <use class="icon-open" href="/images/icons.svg#icon-menu"></use>
-              <use class="icon-close" href="/images/icons.svg#icon-close"></use></svg>
+              }<use class="icon-close" href="/images/icons.svg#icon-close"></use></svg>
             </button>
-            
+
             <div class="mob-container">
               <div class="top-wrap">
               <ul class="mob-nav">
@@ -71,11 +70,19 @@
         </div>
         </div>
 
-
+<!--header-navigation-->
         <nav class="header-nav">
+          <div class="mob-header">
           <a class="logo link" href="/index.html" lang="en"
-            ><span class="accent">Web</span>Studio</a
-          >
+            ><span class="accent">Web</span>Studio</a>
+          
+            <button type="button" class="menu-button menu-open-btn" aria-expanded="false">
+              <svg class="menu-icon" width="40" height="40" aria-label="переключатель мобильного меню">
+              <use class="icon-open" href="/images/icons.svg#icon-menu"></use>
+            </svg>
+            </button>
+            </div>
+            
           <ul class="site-nav-list">
             <li class="link-list">
               <a href="#studio" class="list link-current link">Студия</a>
@@ -572,5 +579,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+     <script src="./js/mob-menu.js"></script>
   </body>
 </html>
