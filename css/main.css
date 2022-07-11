@@ -457,6 +457,12 @@ body {
   width: 100vw;
   height: 100vh;
 }
+.menu-mob .mob-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
 @media screen and (min-width: 768px) {
   .menu-mob {
     display: none;
@@ -468,6 +474,9 @@ body {
   }
 }
 
+.mob-nav .mob-link:hover, .mob-nav .mob-link:focus {
+  color: var(--accent-color);
+}
 @media screen and (min-width: 768px) {
   .mob-nav {
     display: none;
@@ -482,11 +491,15 @@ body {
 .menu-button {
   position: absolute;
   display: block;
-  top: 23px;
-  right: 23px;
-  padding: 0;
+  top: 0;
+  right: 10px;
+  padding: 15px;
   border: none;
   background-color: transparent;
+}
+.menu-button:hover,
+.menu-button focus {
+  fill: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
   .menu-button {
@@ -509,6 +522,65 @@ body {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.mob-nav {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+}
+
+.mob-list {
+  margin-bottom: 32px;
+}
+
+.mob-link {
+  text-decoration: none;
+}
+
+.mob-phone-list {
+  margin-bottom: 32px;
+}
+
+.mob-phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.176;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mob-email-list {
+  margin-bottom: 64px;
+}
+
+.mob-email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-soc {
+  display: flex;
+}
+
+.mob-soc-list:not(:last-child) {
+  padding-right: 10px;
+}
+.mob-soc-list:not(:first-child) {
+  padding-left: 10px;
+  border-left: 1px solid #757575;
+}
+.mob-soc-list .mob-cos-link {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222;
+  letter-spacing: 0.02em;
 }
 
 .contact-list {

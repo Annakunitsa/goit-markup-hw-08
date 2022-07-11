@@ -59,6 +59,13 @@
   right: 0;
   width: 100vw;
   height: 100vh;
+  .mob-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+
   @include tablet {
     display: none;
   }
@@ -68,6 +75,10 @@
 }
 
 .mob-nav {
+  & .mob-link:hover,
+  & .mob-link:focus {
+    color: var(--accent-color);
+  }
   @include tablet {
     display: none;
   }
@@ -78,14 +89,16 @@
 
 .menu-button {
   position: absolute;
-
   display: block;
-  top: 23px;
-  right: 23px;
-  padding: 0;
-
+  top: 0;
+  right: 10px;
+  padding: 15px;
   border: none;
   background-color: transparent;
+  &:hover,
+  focus {
+    fill: var(--accent-color);
+  }
 
   @include tablet {
     display: none;
@@ -105,4 +118,53 @@
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.mob-nav {
+  @include fonts(500, 40px, 1.175, 0.02em);
+}
+
+.mob-list {
+  margin-bottom: 32px;
+}
+
+.mob-link {
+  text-decoration: none;
+}
+
+.mob-phone-list {
+  margin-bottom: 32px;
+}
+
+.mob-phone {
+  @include fonts(500, 34px, 1.176, 0.02em);
+  color: var(--accent-color);
+}
+
+.mob-email-list {
+  margin-bottom: 64px;
+}
+
+.mob-email {
+  @include fonts(500, 24px, 1.166, 0.02em);
+  color: #757575;
+}
+
+.mob-soc {
+  display: flex;
+}
+
+.mob-soc-list {
+  &:not(:last-child) {
+    padding-right: 10px;
+  }
+  &:not(:first-child) {
+    padding-left: 10px;
+    border-left: 1px solid #757575;
+  }
+  .mob-cos-link {
+    text-decoration: none;
+    color: var(--accent-color);
+    @include fonts(500, 18px, 1.222, 0.02em);
+  }
 }
