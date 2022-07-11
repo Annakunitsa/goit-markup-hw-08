@@ -24,20 +24,73 @@
 
   <body>
     <!--Шапка-->
-    <!--<header class="header header-line">
-      <div class="container portfolio-line">
-        <nav class="header-nav">
-          <a class="logo link" href="/index.html"><span class="accent">Web</span>Studio</a>
-          <ul class="site-nav-list">
-            <li class="link-list"><a class="list link" href="./index.html">Студия</a></li>
-            <li class="link-list">
-              <a class="link-current link" href="./portfolio.html">Портфолио</a>
+<header class="header header-line">
+      <div class="container">
+        <div class="menu-mob is-hidden">
+            <button type="button" class="menu-button menu-close-btn is-open" aria-expanded="false">
+              <svg class="menu-icon" width="40" height="40" aria-label="переключатель мобильного меню">
+              }<use class="icon-close" href="/images/icons.svg#icon-close"></use></svg>
+            </button>
+
+            <div class="mob-container">
+              <div class="top-wrap">
+              <ul class="mob-nav">
+            <li class="mob-list">
+              <a href="#studio" class="list mob-link-current mob-link">Студия</a>
             </li>
+            <li class="mob-list"><a class="list mob-link" href="./portfolio.html">Портфолио</a></li>
+            <li class="mob-list"><a class="list mob-link" href="#contacts">Контакты</a></li>
+          </ul>
+          </div>
+
+       <div class="bottom-wrap">
+        <ul class="mob-contacts">
+          <li class="mob-phone-list">
+            <a class="mob-phone link" href="tel:+380961111111">
+             +38 096 111 11 11</a>
+          </li>
+          <li class="mob-email-list">
+            <a class="mob-email link" href="mailto:">info@devstudio.com</a
+            >
+          </li>
+          </ul>
+          <ul class="mob-soc">
+            <li class="mob-soc-list"><a class="mob-cos-link" href="">Instagram</a>
+            </li>
+            <li class="mob-soc-list"><a class="mob-cos-link" href="">Twitter</a>
+            </li>
+            <li class="mob-soc-list"><a class="mob-cos-link" href="">Facebook</a>
+            </li>
+            <li class="mob-soc-list"><a class="mob-cos-link" href="">LinkedIn</a>
+            </li>
+           </ul>
+           </div>
+        </div>
+        </div>
+
+<!--header-navigation-->
+        <nav class="header-nav">
+          <div class="mob-header">
+          <a class="logo link" href="/index.html" lang="en"
+            ><span class="accent">Web</span>Studio</a>
+          
+            <button type="button" class="menu-button menu-open-btn" aria-expanded="false">
+              <svg class="menu-icon" width="40" height="40" aria-label="переключатель мобильного меню">
+              <use class="icon-open" href="/images/icons.svg#icon-menu"></use>
+            </svg>
+            </button>
+            </div>
+            
+          <ul class="site-nav-list">
+            <li class="link-list">
+              <a href="#studio" class="list link-current link">Студия</a>
+            </li>
+            <li class="link-list"><a class="list link" href="./portfolio.html">Портфолио</a></li>
             <li class="link-list"><a class="list link" href="#contacts">Контакты</a></li>
           </ul>
         </nav>
         <ul class="contact-list">
-          <li class="email-list-header">
+          <li>
             <a class="email-link link" href="mailto:">
               <svg class="email-icon link" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
@@ -54,8 +107,10 @@
             >
           </li>
         </ul>
+        
       </div>
-    </header>-->
+    </header>
+
 
     <!--Основная часть-->
     <main>
@@ -75,7 +130,24 @@
             <li class="portfolio-list">
               <a class="link" href="">
                 <div class="portfolio-thumb">
-                  <img src="./images/team.jpg" alt="вебдевелопмент" width="370" />
+                  <picture><source 
+srcset="
+./images/team.jpg     1x,
+./images/people-desk-2x.jpg 2x"
+media="(min-width=1200px)"/>
+
+<source 
+srcset="
+./images/people-tablet.jpg     1x,
+./images/people-tablet-2x.jpg 2x"
+media="(min-width=768px)"/>
+
+<source 
+srcset="
+./images/people-mob.jpg     1x,
+./images/people-mob-2x.jpg 2x"
+media="(min-width=320px)"/>
+                  <img src="./images/team.jpg" alt="вебдевелопмент" width="370" /></picture>
                   <p class="portfolio-description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -90,7 +162,24 @@
             </li>
             <li class="portfolio-list">
               <a class="link" href="">
-                <img src="./images/backetball.jpg" alt="графический дизайн" width="370" />
+                <picture><source 
+srcset="
+./images/backetball.jpg     1x,
+./images/back-desk-2x.jpg 2x"
+media="(min-width=1200px)"/>
+
+<source 
+srcset="
+./images/back-tablet.jpg     1x,
+./images/back-tablet-2x.jpg 2x"
+media="(min-width=768px)"/>
+
+<source 
+srcset="
+./images/back-mob.jpg     1x,
+./images/back-mob-2x.jpg 2x"
+media="(min-width=320px)"/>
+                <img src="./images/backetball.jpg" alt="графический дизайн" width="370" /></picture>
                 <div class="portfolio-card">
                   <h3 class="portfolio-title">Постер New Orlean vs Golden star</h3>
                   <p class="portfolio-subtitle">Дизайн</p>
@@ -99,7 +188,24 @@
             </li>
             <li class="portfolio-list">
               <a class="link" href="">
-                <img src="./images/seafood.jpg" alt="создание вебстраниц" width="370" />
+                              <picture><source 
+srcset="
+./images/seafood.jpg     1x,
+./images/seafood-desk-2x.jpg 2x"
+media="(min-width=1200px)"/>
+
+<source 
+srcset="
+./images/seafood-tablet.jpg     1x,
+./images/seafood-tablet-2x.jpg 2x"
+media="(min-width=768px)"/>
+
+<source 
+srcset="
+./images/seafood-mob.jpg     1x,
+./images/seafood-mob-2x.jpg 2x"
+media="(min-width=320px)"/>
+                <img src="./images/seafood.jpg" alt="создание вебстраниц" width="370" /></picture>
                 <div class="portfolio-card">
                   <h3 class="portfolio-title">Ресторан Seafood</h3>
                   <p class="portfolio-subtitle">Приложение</p>
@@ -108,7 +214,24 @@
             </li>
             <li class="portfolio-list">
               <a class="link" href="">
-                <img src="./images/headphones.jpg" alt="маркетинг" width="370" />
+  <picture><source 
+srcset="
+./images/headphones.jpg     1x,
+./images/music-desk-2x.jpg 2x"
+media="(min-width=1200px)"/>
+
+<source 
+srcset="
+./images/music-tablet.jpg     1x,
+./images/music-tablet-2x.jpg 2x"
+media="(min-width=768px)"/>
+
+<source 
+srcset="
+./images/music-mob.jpg     1x,
+./images/music-mob-2x.jpg 2x"
+media="(min-width=320px)"/>
+                <img src="./images/headphones.jpg" alt="маркетинг" width="370" /></picture>
                 <div class="portfolio-card">
                   <h3 class="portfolio-title">Проект Prime</h3>
                   <p class="portfolio-subtitle">Маркетинг</p>
@@ -117,7 +240,24 @@
             </li>
             <li class="portfolio-list">
               <a class="link" href="">
-                <img src="./images/boxes.jpg" alt="доставка и упаковка" width="370" />
+                  <picture><source 
+srcset="
+./images/boxes.jpg     1x,
+./images/boxes-desk-2x.jpg 2x"
+media="(min-width=1200px)"/>
+
+<source 
+srcset="
+./images/boxes-tablet.jpg     1x,
+./images/boxes-tablet-2x.jpg 2x"
+media="(min-width=768px)"/>
+
+<source 
+srcset="
+./images/boxes-mob.jpg     1x,
+./images/boxes-mob-2x.jpg 2x"
+media="(min-width=320px)"/>
+                <img src="./images/boxes.jpg" alt="доставка и упаковка" width="370" /></picture>
                 <div class="portfolio-card">
                   <h3 class="portfolio-title">Проект Boxes</h3>
                   <p class="portfolio-subtitle">Приложение</p>
@@ -126,7 +266,24 @@
             </li>
             <li class="portfolio-list">
               <a class="link" href="">
-                <img src="./images/desktop.jpg" alt="веб-сайты" width="370" />
+  <picture><source 
+srcset="
+./images/desktop.jpg     1x,
+./images/desktop-desk-2x.jpg 2x"
+media="(min-width=1200px)"/>
+
+<source 
+srcset="
+./images/desktop-tablet.jpg     1x,
+./images/desktop-tablet-2x.jpg 2x"
+media="(min-width=768px)"/>
+
+<source 
+srcset="
+./images/desktop-mob.jpg     1x,
+./images/desktop-mob-2x.jpg 2x"
+media="(min-width=320px)"/>
+                <img src="./images/desktop.jpg" alt="веб-сайты" width="370" /></picture>
                 <div class="portfolio-card">
                   <h3 class="portfolio-title" lang="en">Inspiration has no Borders</h3>
                   <p class="portfolio-subtitle">Веб-сайт</p>
@@ -135,7 +292,24 @@
             </li>
             <li class="portfolio-list">
               <a class="link" href="">
-                <img src="./images/magazin.jpg" alt="журналы" width="370" />
+    <picture><source 
+srcset="
+./images/magazin.jpg     1x,
+./images/magazine-desk-2x.jpg 2x"
+media="(min-width=1200px)"/>
+
+<source 
+srcset="
+./images/magazine-tablet.jpg     1x,
+./images/magazine-tablet-2x.jpg 2x"
+media="(min-width=768px)"/>
+
+<source 
+srcset="
+./images/magazine-mob.jpg     1x,
+./images/magazine-mob-2x.jpg 2x"
+media="(min-width=320px)"/>
+                <img src="./images/magazin.jpg" alt="журналы" width="370" /></picture>
                 <div class="portfolio-card">
                   <h3 class="portfolio-title">Издание Limited Edition</h3>
                   <p class="portfolio-subtitle">Дизайн</p>
@@ -144,7 +318,24 @@
             </li>
             <li class="portfolio-list">
               <a class="link" href="">
-                <img src="./images/label.jpg" alt="лейблы" width="370" />
+   <picture><source 
+srcset="
+./images/label.jpg     1x,
+./images/label-desk-2x.jpg 2x"
+media="(min-width=1200px)"/>
+
+<source 
+srcset="
+./images/label-tablet.jpg     1x,
+./images/label-tablet-2x.jpg 2x"
+media="(min-width=768px)"/>
+
+<source 
+srcset="
+./images/label-mob.jpg     1x,
+./images/label-mob-2x.jpg 2x"
+media="(min-width=320px)"/>
+                <img src="./images/label.jpg" alt="лейблы" width="370" /></picture>
                 <div class="portfolio-card">
                   <h3 class="portfolio-title">Проект LAB</h3>
                   <p class="portfolio-subtitle">Маркетинг</p>
@@ -153,7 +344,24 @@
             </li>
             <li class="portfolio-list">
               <a class="link" href="">
-                <img src="./images/coding.jpg" alt="программирование" width="370" />
+    <picture><source 
+srcset="
+./images/coding.jpg     1x,
+./images/comp-desk-2x.jpg 2x"
+media="(min-width=1200px)"/>
+
+<source 
+srcset="
+./images/comp-tablet.jpg     1x,
+./images/comp-tablet-2x.jpg 2x"
+media="(min-width=768px)"/>
+
+<source 
+srcset="
+./images/comp-mob.jpg     1x,
+./images/comp-mob-2x.jpg 2x"
+media="(min-width=320px)"/>
+                <img src="./images/coding.jpg" alt="программирование" width="370" /></picture>
                 <div class="portfolio-card">
                   <h3 class="portfolio-title" lang="en">Growing Business</h3>
                   <p class="portfolio-subtitle">Приложение</p>
