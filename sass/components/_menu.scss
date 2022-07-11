@@ -47,3 +47,62 @@
   border-radius: 2px;
   background-color: var(--accent-color);
 }
+
+//-----------mob-menu------------
+
+.menu-mob {
+  position: fixed;
+  z-index: 2;
+  //padding: 48px 40px;
+  background-color: white;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.mob-nav {
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.menu-button {
+  position: absolute;
+
+  display: block;
+  top: 23px;
+  right: 23px;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
