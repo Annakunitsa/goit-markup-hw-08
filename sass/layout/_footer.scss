@@ -31,21 +31,28 @@
   }
   @include desktop {
     width: 316px;
+    margin-right: 70px;
   }
 }
 
 .footer-logo {
+  width: 100%;
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
+  & .link {
+    margin: 0 auto;
+  }
+
   @include desktop {
-    margin: 0;
+    justify-content: flex-start;
   }
 }
 
 .address {
-  width: 316px;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 60px;
+
   @include desktop {
     margin-bottom: 9px;
     text-align: left;
@@ -91,6 +98,7 @@
 //social-footer----------------------------------
 .social-footer {
   width: 100%;
+  margin-right: 0;
   @include tablet {
     width: 50%;
   }

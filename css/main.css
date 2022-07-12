@@ -1274,21 +1274,26 @@ body {
 @media screen and (min-width: 1200px) {
   .contact-footer {
     width: 316px;
+    margin-right: 70px;
   }
 }
 
 .footer-logo {
+  width: 100%;
   display: flex;
+  justify-content: center;
+}
+.footer-logo .link {
   margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
   .footer-logo {
-    margin: 0;
+    justify-content: flex-start;
   }
 }
 
 .address {
-  width: 316px;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 60px;
 }
@@ -1343,6 +1348,7 @@ body {
 
 .social-footer {
   width: 100%;
+  margin-right: 0;
 }
 @media screen and (min-width: 768px) {
   .social-footer {
