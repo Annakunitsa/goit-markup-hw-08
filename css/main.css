@@ -1524,8 +1524,8 @@ body {
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   padding: 40px;
   position: absolute;
   top: 50%;
@@ -1535,6 +1535,12 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1570,10 +1576,17 @@ body {
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.5;
   text-align: center;
   color: var(--primary-text-color);
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .modal-input {
@@ -1618,7 +1631,7 @@ body {
 .modal-label {
   font-weight: 400;
   font-size: 12px;
-  line-height: calc 1.1666666667;
+  line-height: 1.166;
   letter-spacing: 0.01em;
   color: #757575;
 }
@@ -1669,40 +1682,66 @@ body {
 .check-text {
   margin-bottom: 30px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.166;
   color: var(--secondary-text-color);
   display: flex;
   align-items: center;
   position: relative;
 }
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+  }
+}
 
 .check-text::before {
   content: "";
-  width: 40px;
-  height: 22px;
+  width: 21px;
+  height: 13px;
   border-radius: 50px;
   border: 1px solid var(--secondary-text-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .check-text::before {
+    width: 40px;
+    height: 22px;
+  }
+}
 
 .check-text::after {
   content: "";
-  width: 18px;
-  height: 18px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
-  left: 3px;
-  top: 3px;
+  left: 2px;
+  top: 2px;
   border: 1px solid var(--secondary-text-color);
   background-color: var(--secondary-text-color);
   position: absolute;
   margin-right: 10px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms;
 }
+@media screen and (min-width: 1200px) {
+  .check-text::after {
+    left: 3px;
+    top: 3px;
+    width: 18px;
+    height: 18px;
+  }
+}
 
 .check-input:checked + .check-text::after {
-  transform: translate(18px);
+  transform: translate(9px);
   background-color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .check-input:checked + .check-text::after {
+    transform: translate(18px);
+  }
 }
 
 .check-input:checked + .check-text::before {
