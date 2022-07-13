@@ -694,41 +694,42 @@ body {
 }
 
 .hero {
-  padding: 118px 60px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin: 0 auto;
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-mob.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-mob-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     min-width: 768px;
-    padding: 118px 204px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-tablet-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     min-width: 1200px;
-    padding: 200px 0px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-2x.jpg);
   }
 }
 
@@ -743,12 +744,18 @@ body {
   color: var(--main-white-color);
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .hero-title {
+    width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    width: 696px;
   }
 }
 
@@ -829,6 +836,16 @@ body {
   text-align: center;
   color: var(--primary-text-color);
 }
+@media screen and (min-width: 768px) {
+  .about-block__subtitle {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-block__subtitle {
+    text-align: left;
+  }
+}
 
 .about-block__text {
   font-weight: 400;
@@ -841,8 +858,8 @@ body {
 .team__title,
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.14;
+  font-size: 28px;
+  line-height: 1.178;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -850,13 +867,11 @@ body {
   .work__title,
 .team__title,
 .clients__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.14;
     margin-bottom: 50px;
   }
-}
-
-.clients__title {
-  margin-bottom: 50px;
-  text-align: center;
 }
 
 .portfolio-title {
@@ -1192,11 +1207,13 @@ body {
 .portfolio-list {
   display: flex;
   gap: 30px;
-  margin-bottom: 30px;
   width: 450px;
   max-height: 404px;
   outline: 1px solid #eeeeee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-list:not(:last-child) {
+  margin-bottom: 30px;
 }
 .portfolio-list:hover .portfolio-description {
   top: 0;
@@ -1225,8 +1242,15 @@ body {
 .portfolio-card {
   width: 100%;
   height: 110px;
-  padding: 20px 24px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
   background-color: var(--main-white-color);
+}
+@media screen and (min-width: 768px) {
+  .portfolio-card {
+    min-height: 146px;
+  }
 }
 
 .portfolio-subtitle {
@@ -1385,9 +1409,9 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 60px;
   max-width: 450px;
   width: 100%;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .social-footer-block {
@@ -1397,6 +1421,7 @@ body {
 @media screen and (min-width: 1200px) {
   .social-footer-block {
     justify-content: flex-start;
+    margin-bottom: 0;
   }
 }
 

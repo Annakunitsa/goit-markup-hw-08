@@ -127,20 +127,22 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-
+  margin-bottom: 60px;
   max-width: 450px;
   width: 100%;
-  margin-bottom: 60px;
+
   @include tablet {
     margin-bottom: 102px;
   }
   @include desktop {
     justify-content: flex-start;
+    margin-bottom: 0;
   }
 }
 
 .social-footer-list {
   display: flex;
+
   justify-content: center;
   width: 44px;
   height: 44px;

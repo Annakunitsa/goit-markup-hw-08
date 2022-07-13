@@ -44,6 +44,12 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--primary-text-color);
+  @include tablet {
+    text-align: left;
+  }
+  @include desktop {
+    text-align: left;
+  }
 }
 
 .about-block__text {
