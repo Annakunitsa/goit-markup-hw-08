@@ -578,11 +578,20 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .mob-header {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mob-header {
+    display: none;
+  }
+}
 
 .menu-open-btn {
   padding: 0;
   border: none;
-  background-color: transparent;
   display: block;
   padding: 0;
   top: 10px;
