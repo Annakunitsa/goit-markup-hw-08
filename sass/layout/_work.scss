@@ -6,11 +6,10 @@
   @include tablet {
     display: none;
   }
-  @media screen and (max-width: 768px) {
-    display: none;
-    @include desktop {
-      width: 1200px;
-    }
+  @include desktop {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
   }
 }
 

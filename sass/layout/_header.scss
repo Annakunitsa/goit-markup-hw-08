@@ -21,6 +21,16 @@
   display: flex;
 }
 
+.mob-header {
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
 .header-nav {
   display: none;
   @include tablet {
